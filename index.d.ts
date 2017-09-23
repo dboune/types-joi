@@ -145,6 +145,13 @@ export interface IPOptions {
     cidr?: string
 }
 
+export interface Base64Options {
+    /**
+     * optional parameter defaulting to true which will require = padding if true or make padding optional if false.
+     */
+    paddingRequired?: boolean
+}
+
 export interface JoiObject {
     isJoi: boolean;
 }
@@ -561,6 +568,11 @@ export interface StringSchema extends AnySchema {
      * Requires the string value to be a valid hexadecimal string.
      */
     hex(): this;
+
+    /**
+     * Requires the string value to be a valid base64 string; does not check the decoded value.
+     */
+    base64(base64options?: Base64Options): this;
 
     /**
      * Requires the string value to be a valid hostname as per RFC1123.
