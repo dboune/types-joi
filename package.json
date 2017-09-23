@@ -1,6 +1,6 @@
 {
     "name": "@types/joi",
-    "version": "10.4.3",
+    "version": "10.4.3-db.1",
     "description": "TypeScript definitions for joi",
     "license": "MIT",
     "contributors": [
@@ -43,6 +43,11 @@
             "name": "Youngrok Kim",
             "url": "https://github.com/rokoroku",
             "githubUsername": "rokoroku"
+        },
+        {
+            "name": "Damian Bouné",
+            "url": "https://github.com/dboune",
+            "githubUsername": "dboune"
         }
     ],
     "main": "",
@@ -52,6 +57,5 @@
     },
     "scripts": {},
     "dependencies": {},
-    "typesPublisherContentHash": "5a71ceb75abd514d2d65b11e3909cce6abb26e9ace7442e86dcf8770b2973cf1",
     "typeScriptVersion": "2.4"
 }
